@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Bazar</title>
+    <link rel="shortcut icon" href="logo1.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white" id="home">
+    <header class="flex items-center justify-between p-4">
+        <div class="text-xl font-bold">Laptop Bazar</div>
+        <nav class="hidden md:flex space-x-4">
+            <a href="#home" class="hover:text-gray-400">Home</a>
+            <a href="laptop-p.html" class="hover:text-gray-400">Products</a>
+            <a href="#top-laptop" class="hover:text-gray-400">Top-Pick</a>
+            <a href="#brand" class="hover:text-gray-400">Brands</a>
+            <a href="#about us" class="hover:text-gray-400">About Us</a>
+            <a href="#contact us" class="hover:text-gray-400">Contact Us</a>
+        </nav>
+        <button id="menu-button" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </header>
+
+    <nav id="mobile-menu" class="hidden md:hidden">
+        <a href="#home" class="block px-4 py-2 text-sm hover:bg-gray-700">Home</a>
+        <a href="laptop-p.html" class="block px-4 py-2 text-sm hover:bg-gray-700">Products</a>
+        <a href="#top-laptop" class="block px-4 py-2 text-sm hover:bg-gray-700">Top-Picks</a>
+        <a href="#brand" class="block px-4 py-2 text-sm hover:bg-gray-700">Brands</a>
+        <a href="#about us" class="block px-4 py-2 text-sm hover:bg-gray-700">About Us</a>
+        <a href="#contact us" class="block px-4 py-2 text-sm hover:bg-gray-700">Contact Us</a>
+    </nav>
+
+    <section class="hero relative">
+        <div class="slider">
+            <div class="slide active">
+                <img src="slider-1.jpg" alt="Slide 1" class="w-full h-full object-cover opacity-70">
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4 bg-gray-900 bg-opacity-50">
+                    <h2 class="text-4xl font-bold mb-2">Discover the Best Laptops</h2>
+                    <p class="text-lg mb-4">Find the perfect laptop with our curated selection.</p>
+                    <a href="#" class="bg-white text-gray-900 py-2 px-4 rounded hover:bg-gray-700 hover:text-white">Browse Laptops</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="slider-2.jpg" alt="Slide 2" class="w-full h-full object-cover opacity-70">
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4 bg-gray-900 bg-opacity-50">
+                    <h2 class="text-4xl font-bold mb-2">Exclusive Deals</h2>
+                    <p class="text-lg mb-4">Don't miss out on our limited-time offers.</p>
+                    <a href="#" class="bg-white text-gray-900 py-2 px-4 rounded hover:bg-gray-700 hover:text-white">View Deals</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="slide-3.jpg" alt="Slide 3" class="w-full h-full object-cover opacity-70">
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4 bg-gray-900 bg-opacity-50">
+                    <h2 class="text-4xl font-bold mb-2">Top Brands</h2>
+                    <p class="text-lg mb-4">Shop laptops from the best brands.</p>
+                    <a href="#" class="bg-white text-gray-900 py-2 px-4 rounded hover:bg-gray-700 hover:text-white">Shop by Brand</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products py-12 bg-gray-800 text-white" id="top-laptop">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Top Picks</h2>
+            <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <img src="laptop1.jpg" alt="Laptop 1" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Laptop Model 1</h3>
+                    <p class="text-gray-300 mb-4">A short description of the laptop.</p>
+                    <a href="#" class="bg-white text-gray-900 py-2 px-4 rounded hover:bg-gray-700 hover:text-white">View Details</a>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <img src="laptop2.jpg" alt="Laptop 2" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Laptop Model 2</h3>
+                    <p class="text-gray-300 mb-4">A short description of the laptop.</p>
+                    <a href="#" class="bg-white text-gray-900 py-2 px-4 rounded hover:bg-gray-700 hover:text-white">View Details</a>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <img src="laptop3.jpg" alt="Laptop 3" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Laptop Model 3</h3>
+                    <p class="text-gray-300 mb-4">A short description of the laptop.</p>
+                    <a href="#" class="bg-white text-gray-900 py-2 px-4 rounded hover:bg-gray-700 hover:text-white">View Details</a>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <img src="laptop4.jpg" alt="Laptop 4" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Laptop Model 4</h3>
+                    <p class="text-gray-300 mb-4">A short description of the laptop.</p>
+                    <a href="#" class="bg-white text-gray-900 py-2 px-4 rounded hover:bg-gray-700 hover:text-white">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="brands py-12 bg-gray-800 text-white" id="brand">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Popular Brands</h2>
+            <div class="grid gap-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg flex items-center justify-center">
+                    <img src="brand1.png" alt="Brand 1" class="w-full h-24 object-contain">
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg flex items-center justify-center">
+                    <img src="brand2.png" alt="Brand 2" class="w-full h-24 object-contain">
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg flex items-center justify-center">
+                    <img src="brand3.png" alt="Brand 3" class="w-full h-24 object-contain">
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg flex items-center justify-center">
+                    <img src="brand4.png" alt="Brand 4" class="w-full h-24 object-contain">
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg flex items-center justify-center">
+                    <img src="brand5.jpg" alt="Brand 5" class="w-full h-24 object-contain">
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg flex items-center justify-center">
+                    <img src="brand6.png" alt="Brand 6" class="w-full h-24 object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us py-12 bg-gray-900 text-white" id="about us">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">About Us</h2>
+            <div class="flex flex-col lg:flex-row items-center lg:justify-between">
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                    <img src="graphic design.jpg" alt="About Us" class="w-full h-64 object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="lg:w-1/2 lg:pl-8">
+                    <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                    <p class="text-gray-300 mb-4">
+                        At Laptop Market, our mission is to provide you with the best selection of laptops and accessories at competitive prices. We are dedicated to delivering exceptional customer service and helping you find the perfect device to meet your needs.
+                    </p>
+                    <h3 class="text-2xl font-semibold mb-4">Our Values</h3>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Customer Satisfaction: We put our customers first and strive to exceed their expectations.</li>
+                        <li>Quality Products: We offer only high-quality products from trusted brands.</li>
+                        <li>Integrity: We operate with honesty and transparency in all our dealings.</li>
+                        <li>Innovation: We stay ahead of trends and continuously update our offerings to reflect the latest technology.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us py-12 bg-gray-900 text-white" id="contact us">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+                    <h3 class="text-2xl font-semibold mb-4">Get in Touch</h3>
+                    <p class="text-gray-300 mb-6">
+                        Have any questions or need assistance? Feel free to reach out to us. We’re here to help and look forward to hearing from you.
+                    </p>
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold mb-2">Address</h4>
+                        <p class="text-gray-300">123 Tech Lane, Silicon Valley, CA 94043</p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold mb-2">Phone</h4>
+                        <p class="text-gray-300">+1 (123) 456-7890</p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold mb-2">Email</h4>
+                        <p class="text-gray-300">support@laptopmarket.com</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <form action="#" method="POST" class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4">Send Us a Message</h3>
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-gray-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-gray-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full p-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-gray-500" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-white text-gray-900 py-2 px-4 rounded hover:bg-gray-700 hover:text-white">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <body class="bg-gray-900 text-white"></body>
+    <!-- Simple Footer Section -->
+    <footer class="bg-gray-800 py-4">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-gray-400 mb-4 md:mb-0">
+                &copy; 2024 Laptop Market. All rights reserved.
+            </div>
+            
+            <div class="text-gray-400 text-center md:text-right">
+                <div>Powered by: Codirung</div>
+                
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    
+    
+    
+        
+    
+    
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showNextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        setInterval(showNextSlide, 2000);
+
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+
+
+
+
+
+    
+    </script>
+</body>
+</html>
